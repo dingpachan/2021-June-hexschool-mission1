@@ -23,18 +23,6 @@ body{
     font-weight: 500;
 }
 
-.font-20{
-    font-size: 20px;
-}
-
-.font-24{
-    font-size: 24px;
-}
-
-.font-32{
-    font-size: 32px;
-}
-
 .bg-darkBlue{
     background-color: #415165;
 }
@@ -43,6 +31,7 @@ body{
     color: #fff !important;
 }
 
+/* 一單位為8px */
 .mt-1{
     margin-top: 8px;
 }
@@ -91,14 +80,6 @@ body{
     margin-bottom: 48px;
 }
 
-.mb-20{
-    margin-bottom: 20px;
-}
-
-.mb-72{
-    margin-bottom: 72px;
-}
-
 .mr-3{
     margin-right: 24px;
 }
@@ -140,17 +121,20 @@ h1{
 
 .title{
     font-size: 32px;
+    line-height: 43px;
     border-bottom: 1px solid #000;
-    padding-bottom: 8px;
 }
 
 .subtitle{
-    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #A00404;
     font-size: 24px;
-    font-weight: 500;
+    line-height: 43px;
+}
+
+.common-div{
+    margin-bottom: 72px;
 }
 
 .skill-div{
@@ -162,13 +146,13 @@ h1{
     margin: 0 auto;
 }
 
-.skill-div p{
+.skill-div h2{
     color: #fff;
     text-align: center;
     border-bottom: 1px solid #fff;
 }
 
-.skill-div.subtitle, .skill-div ul li{
+.skill-div.subtitle{
     color: #fff;
 }
 
@@ -178,6 +162,14 @@ h1{
     padding-left: 24px;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+.skill-div ul li{
+    color: #fff;
+}
+
+.skill-div ul li:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .work-div ul{
@@ -192,7 +184,7 @@ h1{
     line-height: 30px;
 }
 
-.contact-div p{
+.contact-div h2, .contact-div p{
     color: #fff;
     text-align: center;
 }
