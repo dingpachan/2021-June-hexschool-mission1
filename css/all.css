@@ -103,9 +103,10 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
-p, ul li{
+.profile-div p, .education-div ul li, .skill-div ul li, .work-div ul li, .contact-div ul li{
     font-size: 24px;
     line-height: 36px;
 }
@@ -133,12 +134,13 @@ h1{
     line-height: 43px;
 }
 
-.common-div{
+.profile-div,.education-div{
     margin-bottom: 72px;
 }
 
 .skill-div{
     padding-bottom: 36px;
+    margin-bottom: 72px;
 }
 
 .skill-div .container{
@@ -184,7 +186,7 @@ h1{
     line-height: 30px;
 }
 
-.contact-div h2, .contact-div p{
+.contact-div h2, .contact-info{
     color: #fff;
     text-align: center;
 }
@@ -195,6 +197,17 @@ h1{
 
 .contact-div .container{
     padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+.contact-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info a:hover{
+    text-decoration: underline;
 }
 
 .social-media-icon{
